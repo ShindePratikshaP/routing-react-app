@@ -1,0 +1,11 @@
+.heading{
+    color: #0b776e;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+.home-div{
+    background-color:#bcfcf5 ;
+    min-height: 100vh;
+    margin: 0;
+}

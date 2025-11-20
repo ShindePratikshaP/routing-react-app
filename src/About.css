@@ -1,0 +1,11 @@
+.heading1{
+    color: #91065e;
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+.about-div{
+    background-color:#fcdbf1 ;
+    min-height: 100vh;
+    margin: 0;
+}
