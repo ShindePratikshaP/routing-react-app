@@ -4,17 +4,17 @@ import './index.css';
 import About from './About';
 import Contact from './Contact';
 import Home from './Home';
-import { BrowserRouter,Routes,Route } from 'react-router';
 
 const root = createRoot(document.getElementById('root'));
+const path = window.location.pathname;
 
-root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/"element={<Home />} />
-      <Route path="/about"element={<About />} />
-      <Route path="/contact"element={<Contact />} />
-    </Routes>
-  </BrowserRouter>
-);
+if (path ==="/"){
+  root.render(<Home />);
+} else if (path === "/About"){
+  root.render(<About />);
+} else if (path === "/contact"){
+  root.render(<Contact />);
+}else{
+  root.render(<h1>404-Page Not Found</h1>);
+}
 
